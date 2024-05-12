@@ -1,18 +1,21 @@
 appraise 'activerecord-7.0' do
   gem 'activerecord', '~> 7.0.3'
   gem 'database_cleaner', '~> 2.0'
+  gem 'rubocop', '~> 1.63'
   gem 'sqlite3', '~> 1.4'
 end
 
 appraise 'activerecord-6.1' do
   gem 'activerecord', '~> 6.1.6'
   gem 'database_cleaner', '~> 2.0'
+  gem 'rubocop', '~> 1.63'
   gem 'sqlite3', '~> 1.4'
 end
 
 appraise 'activerecord-6.0' do
   gem 'activerecord', '~> 6.0.3'
   gem 'database_cleaner', '~> 2.0'
+  gem 'rubocop', '~> 1.63'
   gem 'sqlite3', '~> 1.4'
 end
 
