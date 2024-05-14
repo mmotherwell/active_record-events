@@ -14,7 +14,7 @@ gemspec
 # gem 'debugger'
 
 # Development dependencies (moved from the gemspec)
-gem 'appraisal', '~> 2.2'
+gem 'appraisal', '~> 2.2', '<= 2.4.1'
 gem 'database_cleaner', '>= 1.99', '< 3'
 gem 'factory_girl', '~> 4.8.1'
 gem 'generator_spec', '~> 0.9'
