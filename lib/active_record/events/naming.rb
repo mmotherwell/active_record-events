@@ -19,15 +19,15 @@ module ActiveRecord
       end
 
       def predicate
-        concatenate(object, past_participle) + '?'
+        "#{concatenate(object, past_participle)}?"
       end
 
       def inverse_predicate
-        concatenate(object, 'not', past_participle) + '?'
+        "#{concatenate(object, 'not', past_participle)}?"
       end
 
       def action
-        concatenate(infinitive, object) + '!'
+        "#{concatenate(infinitive, object)}!"
       end
 
       def safe_action
@@ -48,10 +48,7 @@ module ActiveRecord
 
       private
 
-      attr_reader :infinitive
-      attr_reader :object
-      attr_reader :field_name
-      attr_reader :field_type
+      attr_reader :infinitive, :object, :field_name, :field_type
 
       def concatenate(*parts)
         parts.compact.join('_')

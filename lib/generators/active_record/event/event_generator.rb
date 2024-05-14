@@ -11,14 +11,14 @@ module ActiveRecord
       argument :model_name, type: :string
       argument :event_name, type: :string
 
-      class_option :skip_scopes, type: :boolean,
-        desc: 'Skip the inclusion of scope methods'
-      class_option :field_type, type: :string,
-        desc: 'The field type (datetime or date)'
-      class_option :object, type: :string,
-        desc: 'The name of the object'
-      class_option :strategy, type: :string,
-        desc: 'The comparison strategy (presence or time_comparison)'
+      class_option :skip_scopes, type: :boolean, desc: \
+        'Skip the inclusion of scope methods'
+      class_option :field_type, type: :string, desc: \
+        'The field type (datetime or date)'
+      class_option :object, type: :string, desc: \
+        'The name of the object'
+      class_option :strategy, type: :string, desc: \
+        'The comparison strategy (presence or time_comparison)'
 
       source_root File.expand_path('templates', __dir__)
 

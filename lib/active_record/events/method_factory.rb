@@ -35,10 +35,7 @@ module ActiveRecord
 
       private
 
-      attr_reader :options
-      attr_reader :naming
-      attr_reader :strategy
-      attr_reader :field_type
+      attr_reader :options, :naming, :strategy, :field_type
 
       def define_predicate_method(module_, naming, strategy)
         module_.send(:define_method, naming.predicate) do

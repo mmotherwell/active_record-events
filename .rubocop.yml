@@ -9,8 +9,8 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
-Layout/AlignHash:
-  EnforcedLastArgumentHashStyle: ignore_implicit
+Layout/LineLength:
+  Max: 80
 
 Naming/PredicateName:
   Exclude:
@@ -20,3 +20,11 @@ Metrics/BlockLength:
   ExcludedMethods:
     - describe
     - context
+
+Style/StringLiterals:
+  Exclude:
+    - gemfiles/*.gemfile
+
+Style/MixinUsage:
+  Exclude:
+    - Rakefile

@@ -5,7 +5,7 @@ require 'active_record'
 Bundler.require(:default, ENV['RAILS_ENV'])
 
 # Load application files
-Dir["#{__dir__}/../app/**/*.rb"].each { |f| require f }
+Dir["#{__dir__}/../app/**/*.rb"].sort.each { |f| require f }
 
 # Load the database configuration
 config_file = File.expand_path('database.yml', __dir__)
