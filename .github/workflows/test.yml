@@ -98,6 +98,10 @@ jobs:
           - ruby: '2.5'
             gemfile: activerecord_7.0
           - ruby: '2.5'
+            gemfile: activerecord_6.1
+          - ruby: '2.5'
+            gemfile: activerecord_6.0
+          - ruby: '2.5'
             gemfile: activerecord_4.1
           - ruby: '2.5'
             gemfile: activerecord_4.0
