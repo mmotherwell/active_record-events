@@ -1,9 +1,11 @@
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.0
   DisplayCopNames: true
   Exclude:
     - vendor/**/*
     - spec/dummy/db/schema.rb
+    - gemfiles/*.gemfile
     - tmp/**/*
 
 Style/Documentation:
@@ -20,10 +22,6 @@ Metrics/BlockLength:
   ExcludedMethods:
     - describe
     - context
-
-Style/StringLiterals:
-  Exclude:
-    - gemfiles/*.gemfile
 
 Style/MixinUsage:
   Exclude:
